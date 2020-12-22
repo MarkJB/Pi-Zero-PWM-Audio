@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/mark/Documents/github/PiZero_Audio/pi_zero_audio.sch</source>
+    <date>Mon 06 Mar 2017 23:53:15 GMT</date>
+    <tool>Eeschema 4.0.6-e0-6349~53~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>pi_zero_audio.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>33n</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B892C3</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-S_EIA-3216-12_Reflow</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B893A2</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>270R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B894F5</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>150</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B895AC</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>PiZero</value>
+      <footprint>custom:Pi_Zero</footprint>
+      <libsource lib="custom_parts" part="PiZero"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B898D0</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>BAV99</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="custom_parts" part="BAV99"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B89C4F</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>33n</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B8A4BA</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10u</value>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-S_EIA-3216-12_Reflow</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B8A4C0</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>270</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B8A4C6</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>150</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B8A4CC</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>BAV99</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="custom_parts" part="BAV99"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58B8A4D2</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>CONN_01X05</value>
+      <footprint>custom:SMT_3.5mm_Stereo_jack_5_pin</footprint>
+      <libsource lib="conn" part="CONN_01X05"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDE11E</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="custom_parts" part="BAV99">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BAV99</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+        <pin num="3" name="3" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X05">
+      <description>Connector, single row, 01x05, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="custom_parts" part="PiZero">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PiZero</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3v3" type="input"/>
+        <pin num="2" name="5v" type="input"/>
+        <pin num="3" name="GP2" type="input"/>
+        <pin num="4" name="5v" type="input"/>
+        <pin num="5" name="GP3" type="input"/>
+        <pin num="6" name="GND" type="input"/>
+        <pin num="7" name="GP4" type="input"/>
+        <pin num="8" name="GP14/Tx" type="input"/>
+        <pin num="9" name="GND" type="input"/>
+        <pin num="10" name="GP15/Rx" type="input"/>
+        <pin num="11" name="GP17" type="input"/>
+        <pin num="12" name="GP18" type="input"/>
+        <pin num="13" name="GP27" type="input"/>
+        <pin num="14" name="GND" type="input"/>
+        <pin num="15" name="GP22" type="input"/>
+        <pin num="16" name="GP23" type="input"/>
+        <pin num="17" name="3v3" type="input"/>
+        <pin num="18" name="GP24" type="input"/>
+        <pin num="19" name="GP10" type="input"/>
+        <pin num="20" name="GND" type="input"/>
+        <pin num="21" name="GP9" type="input"/>
+        <pin num="22" name="GP25" type="input"/>
+        <pin num="23" name="GP11" type="input"/>
+        <pin num="24" name="GP8" type="input"/>
+        <pin num="25" name="GND" type="input"/>
+        <pin num="26" name="GP7" type="input"/>
+        <pin num="27" name="ID_SD" type="input"/>
+        <pin num="28" name="ID_SC" type="input"/>
+        <pin num="29" name="GP5" type="input"/>
+        <pin num="30" name="GND" type="input"/>
+        <pin num="31" name="GP6" type="input"/>
+        <pin num="32" name="GP12" type="input"/>
+        <pin num="33" name="GP13" type="input"/>
+        <pin num="34" name="GND" type="input"/>
+        <pin num="35" name="GP19" type="input"/>
+        <pin num="36" name="GP16" type="input"/>
+        <pin num="37" name="GP26" type="input"/>
+        <pin num="38" name="GP20" type="input"/>
+        <pin num="39" name="GND" type="input"/>
+        <pin num="40" name="GP21" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="custom_parts">
+      <uri>/home/mark/Documents/github/PiZero_Audio/libs/custom_parts.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(R3-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="2" name="Net-(C3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="5" name="/L">
+      <node ref="U3" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="6" name="/R">
+      <node ref="J1" pin="4"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad40)">
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad21)">
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad31)">
+      <node ref="U1" pin="31"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad22)">
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad32)">
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad23)">
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="15" name="Net-(R1-Pad2)">
+      <node ref="U1" pin="33"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad24)">
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad35)">
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="20" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad1)">
+      <node ref="U2" pin="3"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="22" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="23" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="27" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="29" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="30" name="Net-(U1-Pad26)">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="31" name="Net-(U1-Pad36)">
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="33" name="Net-(U1-Pad27)">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="34" name="Net-(U1-Pad37)">
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="35" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="36" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="37" name="Net-(U1-Pad38)">
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="38" name="Net-(U1-Pad29)">
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="39" name="Net-(C1-Pad2)">
+      <node ref="U1" pin="39"/>
+      <node ref="U1" pin="9"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="25"/>
+      <node ref="U1" pin="34"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U1" pin="20"/>
+      <node ref="U1" pin="30"/>
+      <node ref="U1" pin="6"/>
+    </net>
+  </nets>
+</export>

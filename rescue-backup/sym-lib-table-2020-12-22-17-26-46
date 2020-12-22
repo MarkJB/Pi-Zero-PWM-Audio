@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name pi_zero_audio-rescue)(type Legacy)(uri ${KIPRJMOD}/pi_zero_audio-rescue.lib)(options "")(descr ""))
+  (lib (name custom_parts)(type Legacy)(uri ${KIPRJMOD}/libs/custom_parts.lib)(options "")(descr ""))
+)
